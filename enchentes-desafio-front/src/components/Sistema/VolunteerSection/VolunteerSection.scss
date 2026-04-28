@@ -1,0 +1,127 @@
+.volunteer {
+  padding: 80px 20px;
+  background: #0b1220;
+  color: #fff;
+}
+
+.volunteer-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.volunteer-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.volunteer-header p {
+  color: #94a3b8;
+}
+
+/* GRID */
+.volunteer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.volunteer-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+/* URGENTE DESTACADO */
+.volunteer-card.urgent {
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+}
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.tag.urgente {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.tag.apoio {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+/* TEXTO */
+.volunteer-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ESTATÍSTICA */
+.stats {
+  margin-top: 16px;
+}
+
+.count {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.label {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-left: 6px;
+}
+
+/* BOTÃO */
+.volunteer-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #cfe2ea;
+  color: #0b1220;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.volunteer-btn:hover {
+ background: #76abeb;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .volunteer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .volunteer-grid {
+    grid-template-columns: 1fr;
+  }
+}

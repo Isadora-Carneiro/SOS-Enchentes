@@ -1,0 +1,97 @@
+.features {
+  padding: 80px 20px;
+  background: #0b1220;
+  color: #fff;
+
+  animation: fadeSection 0.6s ease;
+}
+
+/* entrada da seção */
+@keyframes fadeSection {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CONTAINER */
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+
+  animation: slideUp 0.5s ease;
+}
+
+.features-container p {
+  color: #cbd5e1;
+  margin-bottom: 40px;
+
+  animation: slideUp 0.7s ease;
+}
+
+/* animação texto */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* GRID */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.feature-card {
+  background: #111827;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+
+  transition: 0.3s ease;
+  animation: cardIn 0.5s ease;
+}
+
+/* entrada dos cards */
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* hover estilo sistema real */
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
+}
+
+/* animação escalonada */
+.feature-card:nth-child(1) { animation-delay: 0.05s; }
+.feature-card:nth-child(2) { animation-delay: 0.1s; }
+.feature-card:nth-child(3) { animation-delay: 0.15s; }
+.feature-card:nth-child(4) { animation-delay: 0.2s; }
+.feature-card:nth-child(5) { animation-delay: 0.25s; }
+.feature-card:nth-child(6) { animation-delay: 0.3s; }

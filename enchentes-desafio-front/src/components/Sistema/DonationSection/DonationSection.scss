@@ -1,0 +1,71 @@
+.donation {
+  padding: 80px 20px;
+  background: #0b1220;
+  color: #fff;
+}
+
+.donation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donation-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.donation-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.donation-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.donation-card p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* BOTÃO */
+.donation-button {
+  margin-top: 40px;
+  padding: 12px 20px;
+   background: #cfe2ea;
+  border: none;
+  color: #0b1220;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.donation-button:hover {
+  background: #76abeb;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+}

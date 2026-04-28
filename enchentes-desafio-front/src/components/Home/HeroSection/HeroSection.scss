@@ -1,0 +1,156 @@
+.hero {
+  padding: 80px 0;
+
+  /* entrada suave da seção */
+  animation: fadeHero 0.6s ease;
+}
+
+/* animação geral */
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LAYOUT */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* TEXTO */
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+  animation: slideText 0.5s ease;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--muted-foreground);
+  margin-bottom: 30px;
+  max-width: 500px;
+
+  animation: slideText 0.7s ease;
+}
+
+/* animação de texto */
+@keyframes slideText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOTÕES */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+
+  animation: slideText 0.9s ease;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-primary {
+  background: #abcbf2;
+  color: #000000;
+
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(171, 203, 242, 0.25);
+}
+
+/* BOTÃO OUTLINE */
+.btn-outline {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--foreground);
+
+  transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* STATS */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* CARD */
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+
+  transition: 0.3s ease;
+
+  animation: fadeStat 0.6s ease;
+}
+
+@keyframes fadeStat {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
+
+.stat-card span {
+  font-size: 14px;
+  color: var(--muted-foreground);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-text p {
+    margin: 0 auto 30px;
+  }
+}

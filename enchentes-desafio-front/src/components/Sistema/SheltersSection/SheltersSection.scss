@@ -1,0 +1,77 @@
+.shelters {
+  padding: 80px 20px;
+  background: #0b1220;
+  color: #fff;
+}
+
+.shelters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shelters-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.shelters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.shelter-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 24px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.shelter-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+/* TEXTOS */
+.shelter-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.status {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.capacity {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* BOTÃO */
+.shelter-button {
+  margin-top: 15px;
+  padding: 10px 14px;
+  background: #cfe2ea;
+;
+  border: none;
+  color: #0b1220;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.shelter-button:hover {
+  background: #76abeb;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .shelters-grid {
+    grid-template-columns: 1fr;
+  }
+}

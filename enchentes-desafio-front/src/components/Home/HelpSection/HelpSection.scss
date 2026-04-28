@@ -1,0 +1,195 @@
+.help {
+  padding: 80px 20px;
+  background: #0b1220;
+  color: #fff;
+}
+
+/* CONTAINER */
+.help-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-container h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.help-container p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+/* FILTROS */
+.help-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.help-filters span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.help-filters span:hover {
+  color: #38bdf8;
+}
+
+/* underline animado nos filtros */
+.help-filters span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: 0.3s ease;
+}
+
+.help-filters span:hover::after {
+  width: 100%;
+}
+
+/* GRID */
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.help-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+
+  transition: 0.3s ease;
+  animation: fadeUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+/* entrada suave */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hover com profundidade */
+.help-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
+}
+
+/* HEADER */
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-header h3 {
+  font-size: 18px;
+}
+
+/* PRIORIDADE */
+.urgent {
+  color: #ef4444;
+  font-size: 12px;
+  animation: blink 1.5s infinite;
+}
+
+.high {
+  color: #fb923c;
+  font-size: 12px;
+}
+
+.medium {
+  color: #facc15;
+  font-size: 12px;
+}
+
+/* piscar leve urgente */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* TEXTOS */
+.time {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+.desc {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.location,
+.people {
+  font-size: 13px;
+  margin-top: 6px;
+  color: #cbd5e1;
+}
+
+/* BOTÃO */
+.help-button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #cfe2ea;
+  color: #0b1220;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.help-button:hover {
+  background: #76abeb;
+  transform: scale(1.02);
+}
+
+.help-button:active {
+  transform: scale(0.97);
+}
+
+/* botão ver mais */
+.help-more {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.help-more:hover {
+  background: #ffffff;
+  color: #0b1220;
+}
+
+/* DELAY DOS CARDS (efeito escalonado) */
+.help-card:nth-child(1) { animation-delay: 0.05s; }
+.help-card:nth-child(2) { animation-delay: 0.1s; }
+.help-card:nth-child(3) { animation-delay: 0.15s; }
+.help-card:nth-child(4) { animation-delay: 0.2s; }

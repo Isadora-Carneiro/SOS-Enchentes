@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        {/* LOGO */}
+       
         <div className="logo">
           <Link to="/">
             <h1>SOS Enchentes</h1>
@@ -18,7 +18,7 @@ export default function Header() {
           <span>Rede de apoio</span>
         </div>
 
-        {/* MENU */}
+        
         <nav className={`nav ${open ? "open" : ""}`}>
           <Link to="/" onClick={() => setOpen(false)}>
             Início
@@ -41,13 +41,13 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* AÇÕES */}
+       
         <div className="emergency-status">
           <AlertTriangle size={16} />
           Alerta de emergência ativo
         </div>
 
-        {/* MOBILE */}
+        
         <div className="menu-toggle" onClick={() => setOpen(!open)}>
           {open ? <X /> : <Menu />}
         </div>

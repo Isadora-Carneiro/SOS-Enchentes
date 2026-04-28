@@ -6,7 +6,7 @@
   animation: fadeSection 0.6s ease;
 }
 
-/* entrada da seção */
+
 @keyframes fadeSection {
   from {
     opacity: 0;
@@ -18,7 +18,7 @@
   }
 }
 
-/* CONTAINER */
+
 .features-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -39,7 +39,6 @@
   animation: slideUp 0.7s ease;
 }
 
-/* animação texto */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -51,14 +50,13 @@
   }
 }
 
-/* GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* CARD */
+
 .feature-card {
   background: #111827;
   padding: 24px;
@@ -69,7 +67,6 @@
   animation: cardIn 0.5s ease;
 }
 
-/* entrada dos cards */
 @keyframes cardIn {
   from {
     opacity: 0;
@@ -81,14 +78,12 @@
   }
 }
 
-/* hover estilo sistema real */
 .feature-card:hover {
   transform: translateY(-6px);
   border-color: #38bdf8;
   box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
 }
 
-/* animação escalonada */
 .feature-card:nth-child(1) { animation-delay: 0.05s; }
 .feature-card:nth-child(2) { animation-delay: 0.1s; }
 .feature-card:nth-child(3) { animation-delay: 0.15s; }

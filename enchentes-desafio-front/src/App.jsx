@@ -2,21 +2,21 @@ import "./globalStyle.scss";
 
 import { Routes, Route } from "react-router-dom";
 
-// LAYOUT
-import Header from "./components/layout/Header/Header";
-import Footer from "./components/layout/Footer/Footer";
 
-// HOME
+import Header from "./components/layout/Header/Header.jsx";
+import Footer from "./components/layout/Footer/Footer.jsx";
+
+
 import HeroSection from "./components/Home/HeroSection/HeroSection";
 import FeaturesSection from "./components/Home/FeaturesSection/FeaturesSection";
 import HelpSection from "./components/Home/HelpSection/HelpSection";
 
-// SISTEMA
+
 import DonationSection from "./components/Sistema/DonationSection/DonationSection";
 import SheltersSection from "./components/Sistema/SheltersSection/SheltersSection";
 import VolunteerSection from "./components/Sistema/VolunteerSection/VolunteerSection";
 
-// PÁGINAS
+
 function Home() {
   return (
     <>

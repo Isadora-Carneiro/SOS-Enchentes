@@ -41,7 +41,7 @@ export default function HelpRequestSection() {
         <h2>Pedidos de Ajuda Ativos</h2>
         <p>Veja os pedidos em tempo real e ofereça suporte</p>
 
-        {/* FILTROS */}
+        
         <div className="help-filters">
           <span>Todos</span>
           <span>Resgates</span>
@@ -49,7 +49,6 @@ export default function HelpRequestSection() {
           <span>Suprimentos</span>
         </div>
 
-        {/* CARDS */}
         <div className="help-grid">
           {requests.map((r) => (
             <div key={r.title} className="help-card">

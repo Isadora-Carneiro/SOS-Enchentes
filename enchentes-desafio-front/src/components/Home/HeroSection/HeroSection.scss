@@ -1,11 +1,11 @@
 .hero {
   padding: 80px 0;
 
-  /* entrada suave da seção */
+
   animation: fadeHero 0.6s ease;
 }
 
-/* animação geral */
+
 @keyframes fadeHero {
   from {
     opacity: 0;
@@ -17,7 +17,7 @@
   }
 }
 
-/* LAYOUT */
+
 .hero-content {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-/* TEXTO */
+
 .hero-text h1 {
   font-size: 48px;
   line-height: 1.1;
@@ -43,7 +43,7 @@
   animation: slideText 0.7s ease;
 }
 
-/* animação de texto */
+
 @keyframes slideText {
   from {
     opacity: 0;
@@ -55,7 +55,6 @@
   }
 }
 
-/* BOTÕES */
 .hero-actions {
   display: flex;
   gap: 15px;
@@ -63,7 +62,7 @@
   animation: slideText 0.9s ease;
 }
 
-/* BOTÃO PRINCIPAL */
+
 .btn-primary {
   background: #abcbf2;
   color: #000000;
@@ -76,7 +75,7 @@
   box-shadow: 0 10px 25px rgba(171, 203, 242, 0.25);
 }
 
-/* BOTÃO OUTLINE */
+
 .btn-outline {
   border: 1px solid var(--border);
   background: transparent;
@@ -91,14 +90,14 @@
   transform: translateY(-2px);
 }
 
-/* STATS */
+
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
-/* CARD */
+
 .stat-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -139,7 +138,6 @@
   color: var(--muted-foreground);
 }
 
-/* RESPONSIVO */
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;

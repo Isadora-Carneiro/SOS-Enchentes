@@ -19,7 +19,7 @@
   color: #94a3b8;
 }
 
-/* GRID */
+
 .volunteer-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,7 +28,7 @@
   gap: 20px;
 }
 
-/* CARD */
+
 .volunteer-card {
   background: #111827;
   border: 1px solid #1f2937;
@@ -42,13 +42,13 @@
   border-color: #38bdf8;
 }
 
-/* URGENTE DESTACADO */
+
 .volunteer-card.urgent {
   border: 1px solid rgba(239, 68, 68, 0.5);
   box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
 }
 
-/* TAGS */
+
 .tag {
   display: inline-block;
   font-size: 12px;
@@ -67,7 +67,7 @@
   color: #4ade80;
 }
 
-/* TEXTO */
+
 .volunteer-card h3 {
   font-size: 18px;
   margin-bottom: 8px;
@@ -78,7 +78,7 @@
   color: #94a3b8;
 }
 
-/* ESTATÍSTICA */
+
 .stats {
   margin-top: 16px;
 }
@@ -95,7 +95,7 @@
   margin-left: 6px;
 }
 
-/* BOTÃO */
+
 .volunteer-btn {
   margin-top: 16px;
   width: 100%;
@@ -113,7 +113,7 @@
  background: #76abeb;
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 1024px) {
   .volunteer-grid {
     grid-template-columns: repeat(2, 1fr);

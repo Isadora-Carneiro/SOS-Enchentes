@@ -4,7 +4,6 @@
   color: #fff;
 }
 
-/* CONTAINER */
 .help-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,7 +19,6 @@
   margin-bottom: 30px;
 }
 
-/* FILTROS */
 .help-filters {
   display: flex;
   gap: 16px;
@@ -39,7 +37,6 @@
   color: #38bdf8;
 }
 
-/* underline animado nos filtros */
 .help-filters span::after {
   content: "";
   position: absolute;
@@ -55,14 +52,13 @@
   width: 100%;
 }
 
-/* GRID */
 .help-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* CARD */
+
 .help-card {
   background: #111827;
   border: 1px solid #1f2937;
@@ -74,7 +70,6 @@
   opacity: 0;
 }
 
-/* entrada suave */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -86,14 +81,12 @@
   }
 }
 
-/* hover com profundidade */
 .help-card:hover {
   transform: translateY(-6px);
   border-color: #38bdf8;
   box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
 }
 
-/* HEADER */
 .help-header {
   display: flex;
   justify-content: space-between;
@@ -104,7 +97,6 @@
   font-size: 18px;
 }
 
-/* PRIORIDADE */
 .urgent {
   color: #ef4444;
   font-size: 12px;
@@ -121,13 +113,11 @@
   font-size: 12px;
 }
 
-/* piscar leve urgente */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
 
-/* TEXTOS */
 .time {
   font-size: 12px;
   color: #94a3b8;
@@ -146,7 +136,7 @@
   color: #cbd5e1;
 }
 
-/* BOTÃO */
+
 .help-button {
   margin-top: 15px;
   width: 100%;
@@ -170,7 +160,6 @@
   transform: scale(0.97);
 }
 
-/* botão ver mais */
 .help-more {
   margin-top: 30px;
   padding: 12px 20px;
@@ -188,7 +177,6 @@
   color: #0b1220;
 }
 
-/* DELAY DOS CARDS (efeito escalonado) */
 .help-card:nth-child(1) { animation-delay: 0.05s; }
 .help-card:nth-child(2) { animation-delay: 0.1s; }
 .help-card:nth-child(3) { animation-delay: 0.15s; }

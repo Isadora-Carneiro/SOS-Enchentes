@@ -43,7 +43,6 @@ export default function VolunteerSection() {
   return (
     <section className="volunteer">
 
-      {/* HEADER */}
       <div className="volunteer-header">
         <h2>Centro de Voluntariado</h2>
         <p>
@@ -51,7 +50,7 @@ export default function VolunteerSection() {
         </p>
       </div>
 
-      {/* GRID */}
+    
       <div className="volunteer-grid">
 
         {areas.map((a) => (

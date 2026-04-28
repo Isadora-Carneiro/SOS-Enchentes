@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="hero">
       <div className="container hero-content">
 
-        {/* TEXTO */}
+
         <div className="hero-text">
           <h1>Conectando ajuda em momentos de crise</h1>
 
@@ -25,7 +25,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* STATS */}
+
         <div className="hero-stats">
           <div className="stat-card">
             <h3>1.245</h3>

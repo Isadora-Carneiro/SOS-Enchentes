@@ -6,7 +6,7 @@ export default function Footer() {
 
       <div className="footer-container">
 
-        {/* LOGO / DESCRIÇÃO */}
+        
         <div className="footer-box">
           <h2>SOS Enchentes</h2>
           <p className="subtitle">Rede de Apoio</p>
@@ -16,7 +16,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* LINKS */}
         <div className="footer-box">
           <h3>Links Rápidos</h3>
           <ul>
@@ -27,7 +26,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* INFO */}
+
         <div className="footer-box">
           <h3>Informações</h3>
           <ul>
@@ -38,7 +37,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* CONTATO */}
+
         <div className="footer-box">
           <h3>Contato de Emergência</h3>
 
